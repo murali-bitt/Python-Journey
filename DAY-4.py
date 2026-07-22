@@ -26,6 +26,7 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+
 print("Welcome to Rock, Paper, Scissor!")
 usr_input = int(input("Enter 0 for Rock, 1 for Paper, 2 for Scissor: "))
 if usr_input == 0:
