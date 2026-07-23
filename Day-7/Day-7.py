@@ -4,10 +4,17 @@ word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
-guess = input("Guess a letter: ").lower()
 
-for letter in chosen_word:
-    if letter == guess:
-        print("Right")
+l = len(chosen_word)
+blanks = ("_"*l)
+print(f"the word is: ", blanks)
+
+guess = input("\nGuess a letter: ").lower()
+
+print(len(blanks))
+for i in range(0,l):
+    if guess == chosen_word[i]:
+        print("the word is there.")
     else:
-        print("Wrong")
+        print("The word is not there")
+    i += 1
