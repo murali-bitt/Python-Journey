@@ -1,20 +1,20 @@
-# a = 1
-# while a<=10:
-#     print(f"{a} Harika")
-# #     a += 1
+a = 1
+while a<=10:
+    print(f"{a} Hello")
+#     a += 1
 
-# a =100
-# while a >=1:
-#     print(a)
-#     a -= 1
+a =100
+while a >=1:
+    print(a)
+    a -= 1
 
-# li1 = [1,4,9,16,25,36,49,64,81,100]
-# for a in range(0,len(li1)):
-#     print(li1[a])
+li1 = [1,4,9,16,25,36,49,64,81,100]
+for a in range(0,len(li1)):
+    print(li1[a])
 
-# a = int(input("Enter number to get multiplication table: "))
-# for i in range(1,13):
-#     print(f"{i} X {a} = {i*a}")
+a = int(input("Enter number to get multiplication table: "))
+for i in range(1,13):
+    print(f"{i} X {a} = {i*a}")
 
 num = int(input("Enter a number to search: "))
 tp1 = (1,4,9,16,25,36,49,64,81,100)
