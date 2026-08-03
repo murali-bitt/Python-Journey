@@ -32,4 +32,5 @@ li1 = list(map(int, input("Enter the items in list: ").split()))
 li2 = sorted(li1,reverse= True)
 print(li2)
 print(f"The product of largest two numbers is \"{(li2[0])*(li2[1])}\"")
-print(f"The sum of largest two numbers in \"{(li2[0]+li2[1])}\"")
+print(f"The sum of largest two numbers is \"{(li2[0]+li2[1])}\"")
+
