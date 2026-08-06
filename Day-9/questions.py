@@ -57,4 +57,6 @@
 #         print( x*3 + 1)
 #         x = 3*x + 1
 
-    
+# d = {True: "Python", 1:"Java", 1.0: "C++"}
+# print(d)
+
