@@ -53,3 +53,17 @@
 
 # starting_dictionary["c"] = 7
 # print(starting_dictionary)
+
+
+cnt = True
+data = {}
+while cnt:
+    name = input("Enter your name: ")
+    bid = int(input("Enter your bidding amount: "))
+    data[name] = bid
+    print(data)
+    opn = input("type \"y\" to continue and \"n\" to stop: ")
+    if opn == "n":
+        cnt = False
+    elif opn == "y":
+        print("\n"*20)
