@@ -55,6 +55,15 @@
 # print(starting_dictionary)
 
 
+def high():
+    bidd = 0
+
+    for w in data:
+        if data[w] > bidd:
+            bidd = data[w]
+            winner = w
+    print(f"The winner is {winner} and the amount is: ${bidd}")
+
 cnt = True
 data = {}
 while cnt:
@@ -62,8 +71,9 @@ while cnt:
     bid = int(input("Enter your bidding amount: "))
     data[name] = bid
     print(data)
-    opn = input("type \"y\" to continue and \"n\" to stop: ")
+    opn = input("type \"y\" if there is another biider and \"n\" to know who is the winner: ")
     if opn == "n":
         cnt = False
+        high()
     elif opn == "y":
         print("\n"*20)
