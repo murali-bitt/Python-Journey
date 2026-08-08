@@ -70,7 +70,6 @@ while cnt:
     name = input("Enter your name: ")
     bid = int(input("Enter your bidding amount: "))
     data[name] = bid
-    print(data)
     opn = input("type \"y\" if there is another biider and \"n\" to know who is the winner: ")
     if opn == "n":
         cnt = False
