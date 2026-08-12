@@ -22,9 +22,42 @@
 #             a +=1
 #     return (a>=2)
 
-# is_leap_year(2100)
+# li1 = list(map(int, input("Enter elements of the list: ").split()))
+# print(li1)
+# li2 = li1*2
+# print(li2)
 
-li1 = list(map(int, input("Enter elements of the list: ").split()))
-print(li1)
-li2 = li1*2
-print(li2)
+def add(n1, n2):
+    return n1 + n2
+def subtract(n1, n2):
+    return n1 - n2
+def multiply(n1, n2):
+    return n1 * n2
+def divide(n1, n2):
+    return n1 / n2
+
+should_continue = True
+# n1 = int(input("Enter first number: "))
+while should_continue:
+    n1 = int(input("Enter first number: "))
+    n2 = int(input("Enter second number: "))
+    operation = input("Enter operation to peform(+ , - , * , /): ")
+    if operation == "+":
+        # n1 = add(n1,n2)
+        print(add(n1,n2))
+    elif operation == "-":
+        # n1 = subtract(n1,n2)
+        print(subtract(n1,n2))
+    elif operation == "*":
+        # n1 = multiply(n1,n2)
+        print(multiply(n1,n2))
+    elif operation == "/":
+        # n1 = divide(n1,n2)
+        print(divide(n1,n2))
+    else:
+        print("Invalid operation")
+    ask_continution = input("Type \"Y\" to continue the program and \"N\" to stop: ")
+    if ask_continution == "N":
+        should_continue = False
+    elif ask_continution != "N" and ask_continution != "Y":
+        print("Invalid function")
