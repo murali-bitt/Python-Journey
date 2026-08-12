@@ -23,3 +23,8 @@
 #     return (a>=2)
 
 # is_leap_year(2100)
+
+li1 = list(map(int, input("Enter elements of the list: ").split()))
+print(li1)
+li2 = li1*2
+print(li2)
