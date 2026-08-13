@@ -61,3 +61,5 @@ while should_continue:
         should_continue = False
     elif ask_continution != "N" and ask_continution != "Y":
         print("Invalid function")
+
+print("Hi")
