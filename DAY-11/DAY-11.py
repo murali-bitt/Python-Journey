@@ -1,10 +1,11 @@
-# a = int(input("Enter a number: "))
-# b = int(input("Enter a number: "))
-# print(a+b)
-a = 1
-while a<=10:
-    print(a)
-    a += 1
-print("HEllo world")
-print("Day-11")
-print("Day-12")
+import random
+
+game_over = False
+while game_over != True:
+    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+    com_num = cards[random.randint(0,12)]
+    plr_num = cards[random.randint(0,12)]
+    score = com_num + plr_num
+    print(f"{com_num} + {plr_num} = {score}")
+    if score == 21:
+        game_over = True
