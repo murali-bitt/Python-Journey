@@ -5,3 +5,4 @@ for i in range(1,11):
 print("Helloooo")
 print("Hyyy")
 print("on going exams")
+print("Day 2 of not studying anything")
