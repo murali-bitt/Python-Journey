@@ -1,5 +1,10 @@
-print("Hello world!")
-print("Day 12")
-day  = 0
-print(day)
-print("Hello world")
+enemies = 1
+
+
+def increase_enemies():
+    enemies = 2
+    print(f"enemies inside function: {enemies}")
+
+
+increase_enemies()
+print(f"enemies outside function: {enemies}")
